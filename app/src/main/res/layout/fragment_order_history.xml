@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OrderHistoryFragment"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/txtViewOH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/your_previous_orders_are_listed_below"
+        android:fontFamily="@font/poppins_medium"
+        />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtViewOH"
+        android:alpha="0.6"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/underline"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewNoOrderFir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_haven_t_placed_any_order"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/textViewNoOrderSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_some_delicious_food_now"
+        android:layout_below="@+id/textViewNoOrderFir"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/progressLayoutOH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progressBarOH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

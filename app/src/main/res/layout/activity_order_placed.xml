@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OrderPlaced"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imgOrderPlaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_tick"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/image" />
+    <TextView
+        android:id="@+id/tvOrderPlaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_order_has_been_placed_successfully"
+        android:layout_below="@+id/imgOrderPlaced"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderPlaced"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_borders"
+        android:text="@string/ok"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:id="@+id/btnOk"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:paddingEnd="2dp"
+        />
+
+</RelativeLayout>

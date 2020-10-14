@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioLowToHigh"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="@string/cost_low_to_high"
+            android:textSize="19sp"
+            />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioHighToLow"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="@string/cost_high_to_low"
+            android:textSize="19sp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioRating"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="@string/rating"
+            android:textSize="19sp"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>

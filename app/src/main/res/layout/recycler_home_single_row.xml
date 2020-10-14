@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:layout_weight="1.5"
+            android:id="@+id/imgRestaurantImage"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/image" />
+
+        <RelativeLayout
+            android:layout_weight="3.7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_the_restaurant"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/txtRestaurantCostForOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/rs_299_person"
+                android:padding="8dp"
+                android:layout_below="@id/txtRestaurantName"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#a9a9a9"/>
+        </RelativeLayout>
+
+
+        <!--Many times we see that texts have an image along with them to
+        their right or left. This is added with the help of the
+        drawableLeft (or drawableRight and so on) attribute-->
+    <RelativeLayout
+        android:layout_weight="0.8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHeart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_heart_outline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:id="@+id/txtRestaurantRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="@string/_4_5"
+            android:textColor="#ffca28"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
